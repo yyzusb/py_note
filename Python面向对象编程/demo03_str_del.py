@@ -11,4 +11,4 @@ class WashingMachine():
 
 #打印str函数的返回值
 haier1 = WashingMachine(10,20);
-haier2 = WashingMachine(10,20);
+
