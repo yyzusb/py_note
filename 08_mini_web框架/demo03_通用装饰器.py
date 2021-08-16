@@ -14,11 +14,11 @@ def add_num(*args,**kwargs):
         result += value
 
     for value in kwargs.keys():
-        result += kwargs.keys()
+        result += value
 
     print('结果为:',result)
 
-add_num(44,22)
+add_num(66,22)
 
 
 
