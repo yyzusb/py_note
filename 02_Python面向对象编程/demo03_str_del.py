@@ -1,3 +1,4 @@
+#__str__作用是 ，声明一个 对象，如果没有
 class WashingMachine():
     def __init__(self,width,heigh):
         self.width = width;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="www.baidu.com" method="get">
+        <p>
+            <label>用户名:</label> <input type="text">
+        </p>
+
+        <p>
+            <label>密码:</label> <input  type="password">
+        </p>
+
+        <p>
+            <label>性别:</label>
+            <input  type="radio" name="gender" value="0">男
+            <input  type="radio" name="gender" value="1">女
+        </p>
+
+        <p>
+            <label>爱好:</label>
+            <input  type="checkbox" name="hobby" value="front">前端
+            <input  type="checkbox" name="hobby" value="back">后端
+            <input  type="checkbox" name="hobby" value="security">安全
+        </p>
+
+        <p>
+            <label>照片</label>
+            <input type="file" name="pic">
+        </p>
+
+        <p>
+            <label>自我介绍</label>
+            <textarea name="desc"></textarea>
+        </p>
+
+        <p>
+            <label>籍贯</label>
+            <select name="hometown">
+                <option value="0">帝都</option>
+                <option value="1">华盛顿</option>
+                <option value="2">伦敦</option>
+                <option value="3">慕尼黑</option>
+            </select>
+        </p>
+
+        <p>
+            <label>E-mail</label>
+            <input type="email">
+        </p>
+
+        <p>
+            <input type="submit" value="提交">
+            <input type="reset" value="重置">
+        </p>
+
+    </form>
+</body>
+</html>
+
+
+
+<!--
+<input>标签表示表单元素的用户输入标签
+<label>表示表单元素的文字标注标签
+各种type属性
+type="text"
+type=“password"
+type="radio"
+type="ckeckbox"
+type="file"
+type="submit"
+type="reset"
+type="button"
+
+<textarea> 表示表达元素的多行文本输入框标签，定义多行文本输入框
+<select> 表示表单元素的下拉列表标签
+<option>与<select>标签配合，定义下拉列表中的选项
+-->
