@@ -1,6 +1,7 @@
 import socket
 import threading
 
+
 class http_server():
     def __init__(self):
         new_http_server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
