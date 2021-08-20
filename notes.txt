@@ -1,0 +1,34 @@
+
+
+python -m pip install -U Django
+
+sudo pip install virtualenv
+
+sudo pip install virtualenvwrapper
+
+在home目录下创建 .virtualenvs
+
+在.bashrc中添加：
+    export WORKON_HOME=$HOME/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+    source .bashrc
+
+mkvirtualenv -p python3 py3_django
+
+workon 查看虚拟空间\切换虚拟空间
+
+rmvirtualenv py3_django 删除虚拟环境
+
+pip install django=版本号
+
+django-admin startproject bookmanaer
+
+python manage.py runserver 127.0.0.1:8000
+
+python manage.py startapp login
+
+把创建的子应用安装\注册到Django工程中，在settings.py中的INSTALLLED_APPS 模块中添加
+'login.apps.LoginConfig'
+
+
+在pycharm中打开工程，配置虚拟环境解释器
