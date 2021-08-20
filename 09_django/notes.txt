@@ -1,5 +1,3 @@
-
-
 python -m pip install -U Django
 
 sudo pip install virtualenv
@@ -30,5 +28,16 @@ python manage.py startapp login
 把创建的子应用安装\注册到Django工程中，在settings.py中的INSTALLLED_APPS 模块中添加
 'login.apps.LoginConfig'
 
-
 在pycharm中打开工程，配置虚拟环境解释器
+
+创建迁移文件
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+在子应用的admin中注册模型
+
+
+
