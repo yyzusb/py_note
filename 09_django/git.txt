@@ -6,3 +6,24 @@ git config user.name
 git config user.email
 
 git add file.txt(git add .)
+git commit -m'描述更改内容' //每次提交前先git add .
+git log         //记录当前版本信息
+git reflog      //记录所有版本信息
+git reset --hard 2d44e8b    //回退到指定版本
+
+git checkout    //撤销工作区代码
+
+git reset --hard HEAD^^ //一个^代表回退上一次的版本
+git reset --hard HEAD~5 //回退5个版本
+
+
+git status
+git rm          //s删除
+git checkout    //恢复
+
+
+
+
+
+
+
