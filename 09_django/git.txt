@@ -5,12 +5,14 @@ git init
 git config user.name
 git config user.email
 
-git add file.txt(git add .)
-git commit -m'描述更改内容' //每次提交前先git add .
+git add file.txt(git add .)                         //提交到暂时存储区
+git commit -m'描述更改内容' //每次提交前先git add .     //提交到git仓库
+git commit -am'描述信息'    //一次解决上面两个步骤
+
 git log         //记录当前版本信息
 git reflog      //记录所有版本信息
 git reset --hard 2d44e8b    //回退到指定版本
-
+git reset HEAD file //从暂时存储区取回到工作区
 git checkout    //撤销工作区代码
 
 git reset --hard HEAD^^ //一个^代表回退上一次的版本
@@ -18,9 +20,30 @@ git reset --hard HEAD~5 //回退5个版本
 
 
 git status
-git rm          //s删除
+git rm          //删除
 git checkout    //恢复
 
+git clone
+git push
+git pull
+
+//当代码完成一个版本后，可以打一个标签
+
+git tag --help
+git tag -a v1.0 -m '第一版本'
+git push origin v1.0  //origin在git的config里面设置
+git push origin --delete v1.0
+
+
+git branch      //查看当前分支
+git checkout -b login  //创建 login的分支
+git checkout login  //切换到login分支
+git commit login    //先在分支提交，再去主分支合并
+
+
+git branch -D login     //删除分支
+git checkout master
+git merge login     //切换到主分支，合并代码
 
 
 
